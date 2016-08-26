@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIView *baseView;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
+@property (weak, nonatomic) IBOutlet UIButton *verifyBtn;
+
+
 /** 最大选择数 default is 10 */
 @property (nonatomic, assign) NSInteger maxSelectCount;
 
@@ -41,8 +44,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)showWithSender:(UIViewController *)sender
                animate:(BOOL)animate
-        lastSelectPhotoModels:( NSArray<ZLSelectPhotoModel *> * _Nullable )lastSelectPhotoModels
-            completion:(void (^)(NSArray<UIImage *> *selectPhotos, NSArray<ZLSelectPhotoModel *> *selectPhotoModels))completion;
+        lastSelectPhotoModels:( NSMutableArray<ZLSelectPhotoModel *> * _Nullable )lastSelectPhotoModels
+            completion:(void (^)(NSMutableArray<UIImage *> *selectPhotos, NSMutableArray<ZLSelectPhotoModel *> *selectPhotoModels))completion;
 
 NS_ASSUME_NONNULL_END
 

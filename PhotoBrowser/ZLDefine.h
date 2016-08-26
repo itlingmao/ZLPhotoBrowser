@@ -27,7 +27,7 @@
 #define kViewHeight     [[UIScreen mainScreen] bounds].size.height
 
 ////////ZLPhotoActionSheet
-#define kBaseViewHeight 300
+#define kBaseViewHeight kViewHeight / 2
 
 ////////ZLShowBigImgViewController
 #define kItemMargin 30

@@ -27,8 +27,8 @@
 
 @property (nonatomic, assign) BOOL shouldReverseAssets; //是否需要对接收到的图片数组进行逆序排列
 
-@property (nonatomic, copy) void (^onSelectedPhotos)(NSArray<ZLSelectPhotoModel *> *, BOOL isSelectOriginalPhoto); //点击返回按钮的回调
+@property (nonatomic, copy) void (^onSelectedPhotos)(NSMutableArray<ZLSelectPhotoModel *> *, BOOL isSelectOriginalPhoto); //点击返回按钮的回调
 
-@property (nonatomic, copy) void (^btnDoneBlock)(NSArray<ZLSelectPhotoModel *> *, BOOL isSelectOriginalPhoto); //点击确定按钮回调
+@property (nonatomic, copy) void (^btnDoneBlock)(NSMutableArray<ZLSelectPhotoModel *> *, BOOL isSelectOriginalPhoto); //点击确定按钮回调
 
 @end

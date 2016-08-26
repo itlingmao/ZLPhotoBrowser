@@ -13,4 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIButton *btnSelect;
 
++ (instancetype)collectionCell:(UICollectionView *)collection andIndexPath:(NSIndexPath *)indexPath andArrDataSources:(NSArray *)arrDataSources;
+
 @end

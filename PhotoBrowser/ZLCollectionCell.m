@@ -14,4 +14,28 @@
     // Initialization code
 }
 
+//+ (instancetype)collectionCell:(UICollectionView *)collection andIndexPath:(NSIndexPath *)indexPath andArrDataSources:(NSArray *)arrDataSources{
+//    
+//    ZLCollectionCell *cell = [collection dequeueReusableCellWithReuseIdentifier:@"ZLCollectionCell" forIndexPath: indexPath];
+//    
+//    [cell.btnSelect setBackgroundImage:[UIImage imageNamed:@"delete"] forState:UIControlStateNormal];
+//    cell.imageView.image = arrDataSources[indexPath.row];
+//    cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
+//    cell.btnSelect.tag = indexPath.row;
+//    [cell.btnSelect addTarget:self action:@selector(btnRmove:) forControlEvents:UIControlEventTouchUpInside];
+//    
+//    return cell;
+//}
+//
+//- (void)btnRmove:(UIButton *)btn {
+//    
+//    [self.arrDataSources removeObjectAtIndex:btn.tag];
+//    
+//    NSLog(@"self.lastSelectMoldels:%@  btn.tag:%zd  ",self.lastSelectMoldels,btn.tag);
+//    [self.lastSelectMoldels removeObjectAtIndex:btn.tag];
+//    
+//    
+//    [self.collectionView reloadData];
+//}
+
 @end

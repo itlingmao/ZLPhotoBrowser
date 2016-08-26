@@ -10,6 +10,8 @@
 
 @class ZLSelectPhotoModel;
 
+typedef void(^doneBlock)(NSMutableArray<ZLSelectPhotoModel *> *selPhotoModels, BOOL isSelectOriginalPhoto);
+
 @interface ZLPhotoBrowser : UITableViewController
 
 //最大选择数
@@ -20,7 +22,7 @@
 @property (nonatomic, strong) NSMutableArray<ZLSelectPhotoModel *> *arraySelectPhotos;
 
 //选则完成后回调
-@property (nonatomic, copy) void (^DoneBlock)(NSArray<ZLSelectPhotoModel *> *selPhotoModels, BOOL isSelectOriginalPhoto);
+@property (nonatomic, copy) doneBlock DoneBlock;
 //取消选择后回调
 @property (nonatomic, copy) void (^CancelBlock)();
 
